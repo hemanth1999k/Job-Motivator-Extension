@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #818cf8;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --success-color: #22c55e;
+  }
+  
+  body {
+    width: 360px;
+    margin: 0;
+    padding: 16px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 0 0 16px;
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+  }
+  
+  .progress-container {
+    margin-top: 12px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
+  
+  .message {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .timer {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .mood-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .mood-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .mood-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .playlist-suggestions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .playlist-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .playlist {
+    padding: 12px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .playlist:hover {
+    transform: translateY(-2px);
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search Motivator</title>
+  <link href="popup.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Job Search Motivator</h1>
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+        <p id="progress-text">Progress: 0%</p>
+      </div>
+    </div>
+
+    <div class="motivation-section">
+      <p id="motivation-message" class="message">You're doing great! Keep pushing forward!</p>
+      <button id="new-message" class="btn">New Message</button>
+    </div>
+
+    <div class="break-section">
+      <button id="break-timer" class="btn">Take a 5-min Break</button>
+      <div id="timer" class="timer hidden">05:00</div>
+    </div>
+
+    <div class="mood-tracker">
+      <h2>How are you feeling?</h2>
+      <div class="mood-buttons">
+        <button class="mood-btn" data-mood="great">😊 Great</button>
+        <button class="mood-btn" data-mood="okay">😐 Okay</button>
+        <button class="mood-btn" data-mood="stressed">😓 Stressed</button>
+      </div>
+    </div>
+
+    <div class="music-section">
+      <h2>Need some motivation?</h2>
+      <div id="playlist-suggestions" class="playlist-suggestions">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX7KNKjOK0o75" target="_blank" class="playlist-link">
+          <div class="playlist">
+            <span>Focus Flow</span>
+          </div>
+        </a>
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0" target="_blank" class="playlist-link">
+          <div class="playlist">
+            <span>Mood Booster</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
